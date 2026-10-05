@@ -22,7 +22,7 @@ $navLink = function (string $key, string $href, string $label) use ($nav): strin
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?= e($title) ?> · TimeCapsule</title>
+  <title><?= e($title) ?> · TimeCapsule Caralasciuc Ilia</title>
   <link rel="stylesheet" href="/vendor/flatpickr/flatpickr.min.css">
   <link rel="stylesheet" href="/css/app.css">
   <script src="/vendor/flatpickr/flatpickr.min.js" defer></script>
