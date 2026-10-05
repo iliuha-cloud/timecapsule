@@ -22,7 +22,7 @@ $navLink = function (string $key, string $href, string $label) use ($nav): strin
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?= e($title) ?> · TimeCapsule Caralasciuc Ilia</title>
+  <title><?= e($title) ?> · TimeCapsule</title>
   <link rel="stylesheet" href="/vendor/flatpickr/flatpickr.min.css">
   <link rel="stylesheet" href="/css/app.css">
   <script src="/vendor/flatpickr/flatpickr.min.js" defer></script>
@@ -82,7 +82,7 @@ $navLink = function (string $key, string $href, string $label) use ($nav): strin
 <footer class="site-footer">
   <div class="container">
     <?php /* Shows which machine answered, which database host it uses and where files are stored. */ ?>
-    Served by <code><?= e(gethostname()) ?></code> · DB: <code><?= e(config('DB_HOST', 'localhost')) ?></code> · Files: <code>local disk (<?= e(config('UPLOAD_DIR', 'storage/uploads')) ?>)</code>
+    Served by <code><?= e(gethostname()) ?></code> · DB: <code><?= e(config('DB_HOST', 'localhost')) ?></code> · Files: <code>local disk (<?= e(config('UPLOAD_DIR', 'storage/uploads')) ?>) -  Caralasciuc Ilia</code>
   </div>
 </footer>
 
