@@ -1,0 +1,12 @@
+.env
+.git
+.gitignore
+.DS_Store
+README.md
+deploy/
+vendor/
+storage/uploads/*
+!storage/uploads/.gitkeep
+storage/sessions/*
+!storage/sessions/.gitkeep
+storage/*.log

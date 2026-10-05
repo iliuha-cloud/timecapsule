@@ -1,0 +1,17 @@
+{
+    "name": "timecapsule/open-capsules-php-functional",
+    "description": "TimeCapsule app in plain procedural PHP (no framework).",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "vlucas/phpdotenv": "^5.7"
+    },
+    "config": {
+        "platform": {
+            "php": "8.2.0"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

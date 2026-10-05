@@ -1,0 +1,59 @@
+# TimeCapsule (pure PHP): app + PostgreSQL.
+#   docker compose up --build        ->  http://localhost:8080
+services:
+  app:
+    build: .
+    ports:
+      - "${APP_HOST_PORT:-8080}:80"
+    environment:
+      APP_URL: "http://localhost:${APP_HOST_PORT:-8080}"
+      APP_DEBUG: "false"
+      # The app talks to the "db" container below.
+      DB_HOST: db
+      DB_PORT: "5432"
+      DB_NAME: timecapsule
+      DB_USER: timecapsule
+      DB_PASSWORD: secret
+      UPLOAD_DIR: storage/uploads
+      MAX_UPLOAD_MB: "5"
+      MAIL_DELAY_SECONDS: ${MAIL_DELAY_SECONDS:-3}
+      AUTH_ENABLED: ${AUTH_ENABLED:-true}
+    volumes:
+      # Uploaded files survive container restarts.
+      - uploads:/var/www/html/storage/uploads
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: timecapsule
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: timecapsule
+    # The database port is published on the host so you can connect with a DB client
+    # (or run the app without Docker). Do not publish it like this in production.
+    ports:
+      - "${DB_HOST_PORT:-5432}:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U timecapsule -d timecapsule"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  # Adminer: a small web UI for the database, open http://localhost:8081
+  # System: PostgreSQL · Server: db · Username: timecapsule · Password: secret · Database: timecapsule
+  adminer:
+    image: adminer:5
+    ports:
+      - "${ADMINER_HOST_PORT:-8081}:8080"
+    environment:
+      ADMINER_DEFAULT_SERVER: db
+    depends_on:
+      - db
+
+volumes:
+  db-data:
+  uploads:
