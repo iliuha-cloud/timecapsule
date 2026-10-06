@@ -22,7 +22,7 @@
 Бюджет `ZeroSpend` (шаблон Zero spend budget) создан и отображается в списке Budgets.
 
 ### Задание 2. Экземпляр EC2
-![Экземпляр webserver в состоянии Running]!(image-1.png)
+![Экземпляр webserver в состоянии Running](screenshots/image-1.png)
 Экземпляр `webserver` в состоянии Running, все проверки Status check пройдены (2/2 checks passed), виден Instance ID и публичный IP.
 
 ![Страница nginx в браузере](screenshots/image-2.png)
