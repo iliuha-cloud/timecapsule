@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1070" viewBox="0 0 1700 1070" font-family="DejaVu Sans">
+<defs>
+<marker id="ah111111" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker>
+<marker id="ah8a3ffc" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a3ffc"/></marker>
+<marker id="ahe8590c" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e8590c"/></marker>
+<marker id="ah1c7ed6" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c7ed6"/></marker>
+</defs>
+<rect width="1700" height="1070" fill="#fff"/>
+<rect x="200" y="10" width="1150" height="1040" rx="2" fill="none" stroke="#222" stroke-width="3"/>
+<rect x="200" y="10" width="70" height="60" rx="2" fill="#232f3e" stroke="#232f3e" stroke-width="2"/>
+<text x="235" y="50" font-size="22" fill="#fff" text-anchor="middle" font-weight="bold">aws</text>
+<text x="285" y="50" font-size="26" fill="#111" text-anchor="start" font-weight="bold">AWS Cloud</text>
+<rect x="225" y="80" width="1100" height="950" rx="4" fill="none" stroke="#1ea7e1" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="225" y="80" width="48" height="48" rx="2" fill="#1ea7e1" stroke="#1ea7e1" stroke-width="2"/>
+<text x="299" y="112" font-size="18" fill="#1971c2" text-anchor="start">Регион eu-central-1 (Frankfurt)</text>
+<rect x="290" y="135" width="950" height="680" rx="4" fill="none" stroke="#8a3ffc" stroke-width="4"/>
+<text x="320" y="175" font-size="24" fill="#6f2dbd" text-anchor="start" font-weight="bold">VPC</text>
+<text x="385" y="175" font-size="22" fill="#333" text-anchor="start">10.7.0.0/16</text>
+<rect x="320" y="215" width="430" height="585" rx="6" fill="#eaf6fd" stroke="#1ea7e1" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="780" y="215" width="430" height="585" rx="6" fill="#eaf6fd" stroke="#1ea7e1" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="345" y="240" font-size="20" fill="#1971c2" text-anchor="start" font-weight="bold">eu-central-1a</text>
+<text x="805" y="240" font-size="20" fill="#1971c2" text-anchor="start" font-weight="bold">eu-central-1b</text>
+<rect x="345" y="255" width="380" height="205" rx="6" fill="#e6f4d9" stroke="#7cb342" stroke-width="2"/>
+<text x="360" y="282" font-size="19" fill="#111" text-anchor="start" font-weight="bold">public-a</text>
+<text x="360" y="304" font-size="16" fill="#111" text-anchor="start">10.7.0.0/24</text>
+<rect x="805" y="255" width="380" height="205" rx="6" fill="#e6f4d9" stroke="#7cb342" stroke-width="2"/>
+<text x="820" y="282" font-size="19" fill="#111" text-anchor="start" font-weight="bold">public-b</text>
+<text x="820" y="304" font-size="16" fill="#111" text-anchor="start">10.7.1.0/24</text>
+<rect x="360" y="315" width="350" height="135" rx="6" fill="#fdf3e3" stroke="#fdf3e3" stroke-width="2"/>
+<rect x="372" y="330" width="60" height="60" rx="6" fill="none" stroke="#e8590c" stroke-width="4"/>
+<rect x="384" y="342" width="36" height="36" rx="2" fill="#e8590c" stroke="#e8590c" stroke-width="2"/>
+<text x="448" y="345" font-size="18" fill="#111" text-anchor="start" font-weight="bold">app-server</text>
+<text x="448" y="367" font-size="15" fill="#111" text-anchor="start">(t3.micro) TimeCapsule</text>
+<text x="448" y="386" font-size="15" fill="#d9480f" text-anchor="start" font-weight="bold">Elastic IP</text>
+<text x="372" y="415" font-size="15" fill="#d9480f" text-anchor="start" font-weight="bold">Security Group: web-sg</text>
+<text x="372" y="435" font-size="14" fill="#d9480f" text-anchor="start">Порты: 80 (0.0.0.0/0), 22 (bastion-sg)</text>
+<rect x="820" y="315" width="350" height="135" rx="6" fill="#fdf3e3" stroke="#fdf3e3" stroke-width="2"/>
+<rect x="832" y="330" width="60" height="60" rx="6" fill="none" stroke="#e8590c" stroke-width="4"/>
+<rect x="844" y="342" width="36" height="36" rx="2" fill="#e8590c" stroke="#e8590c" stroke-width="2"/>
+<text x="908" y="345" font-size="18" fill="#111" text-anchor="start" font-weight="bold">bastion</text>
+<text x="908" y="367" font-size="15" fill="#111" text-anchor="start">(t3.micro, только SSH)</text>
+<text x="832" y="415" font-size="15" fill="#d9480f" text-anchor="start" font-weight="bold">Security Group: bastion-sg</text>
+<text x="832" y="435" font-size="14" fill="#d9480f" text-anchor="start">Порт: 22 (мой IP)</text>
+<rect x="335" y="495" width="865" height="290" rx="6" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-dasharray="3 5"/>
+<text x="350" y="517" font-size="15" fill="#d9480f" text-anchor="start" font-weight="bold">Группа подсетей timecapsule-dev-db-subnets</text>
+<rect x="345" y="530" width="380" height="245" rx="6" fill="#d6ebfa" stroke="#1c7ed6" stroke-width="2"/>
+<text x="360" y="556" font-size="19" fill="#111" text-anchor="start" font-weight="bold">private-a</text>
+<text x="585" y="556" font-size="16" fill="#111" text-anchor="start">10.7.10.0/24</text>
+<rect x="805" y="530" width="380" height="245" rx="6" fill="#d6ebfa" stroke="#1c7ed6" stroke-width="2"/>
+<text x="820" y="556" font-size="19" fill="#111" text-anchor="start" font-weight="bold">private-b</text>
+<text x="1045" y="556" font-size="16" fill="#111" text-anchor="start">10.7.11.0/24</text>
+<rect x="360" y="570" width="350" height="195" rx="6" fill="#f4f9ff" stroke="#74a9e0" stroke-width="1.5"/>
+<ellipse cx="400" cy="600" rx="20" ry="8" fill="#1c7ed6"/><rect x="380" y="600" width="40" height="34" fill="#1c7ed6"/><ellipse cx="400" cy="634" rx="20" ry="8" fill="#1c7ed6"/><ellipse cx="400" cy="600" rx="20" ry="8" fill="#5aa0ea"/>
+<text x="435" y="596" font-size="17" fill="#111" text-anchor="start" font-weight="bold">RDS: timecapsule-dev-rds</text>
+<text x="435" y="617" font-size="14" fill="#111" text-anchor="start">PostgreSQL, db.t4g.micro, 20 ГиБ gp3</text>
+<text x="435" y="636" font-size="14" fill="#111" text-anchor="start">без публичного IP, шифрование</text>
+<text x="372" y="666" font-size="13.5" fill="#333" text-anchor="start">Автобэкапы 7 дней (PITR, логи ≈ каждые 5 мин)</text>
+<text x="372" y="692" font-size="14.5" fill="#d9480f" text-anchor="start" font-weight="bold">Security Group: timecapsule-dev-rds-sg</text>
+<text x="372" y="712" font-size="14" fill="#d9480f" text-anchor="start">Порт 5432 (только web-sg)</text>
+<text x="372" y="740" font-size="13.5" fill="#333" text-anchor="start">Остановка каждый вечер в 23:00 (Scheduler)</text>
+<rect x="830" y="575" width="330" height="90" rx="6" fill="#f4f9ff" stroke="#74a9e0" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="995" y="603" font-size="16" fill="#555" text-anchor="middle" font-weight="bold">Резерв (экземпляров нет)</text>
+<text x="995" y="625" font-size="14" fill="#555" text-anchor="middle">сюда восстанавливают базу</text>
+<text x="995" y="644" font-size="14" fill="#555" text-anchor="middle">при отказе зоны 1a</text>
+<ellipse cx="765" cy="52" rx="62" ry="28" fill="#fff" stroke="#111" stroke-width="3"/>
+<text x="765" y="58" font-size="17" fill="#111" text-anchor="middle" font-weight="bold">Интернет</text>
+<polyline points="765,82 765,128" fill="none" stroke="#111111" stroke-width="2.5" marker-end="url(#ah111111)" marker-start="url(#ah111111)"/>
+<circle cx="765" cy="165" r="32" fill="#fff" stroke="#8a3ffc" stroke-width="4"/>
+<path d="M752,182 V158 a13,13 0 0 1 26,0 V182" fill="none" stroke="#8a3ffc" stroke-width="5"/>
+<text x="812" y="162" font-size="17" fill="#111" text-anchor="start" font-weight="bold">Internet Gateway</text>
+<text x="812" y="184" font-size="15" fill="#111" text-anchor="start">(timecapsule-dev-igw)</text>
+<rect x="330" y="835" width="430" height="170" rx="6" fill="#e6f4d9" stroke="#7cb342" stroke-width="3"/>
+<text x="345" y="862" font-size="19" fill="#111" text-anchor="start" font-weight="bold">public-rt</text>
+<text x="345" y="882" font-size="14" fill="#111" text-anchor="start">(public-a, public-b)</text>
+<rect x="790" y="835" width="420" height="170" rx="6" fill="#d6ebfa" stroke="#1c7ed6" stroke-width="3"/>
+<text x="805" y="862" font-size="19" fill="#111" text-anchor="start" font-weight="bold">private-rt</text>
+<text x="805" y="882" font-size="14" fill="#111" text-anchor="start">(private-a, private-b)</text>
+<rect x="330" y="900" width="430" height="40" rx="0" fill="#fff" stroke="#555" stroke-width="1.5"/>
+<text x="345" y="926" font-size="16" fill="#111" text-anchor="start">10.7.0.0/16</text>
+<text x="520" y="926" font-size="16" fill="#111" text-anchor="start">local</text>
+<rect x="330" y="940" width="430" height="40" rx="0" fill="#fff" stroke="#555" stroke-width="1.5"/>
+<text x="345" y="966" font-size="16" fill="#111" text-anchor="start">0.0.0.0/0</text>
+<text x="520" y="966" font-size="16" fill="#111" text-anchor="start">igw (timecapsule-dev-igw)</text>
+<rect x="790" y="900" width="420" height="40" rx="0" fill="#fff" stroke="#555" stroke-width="1.5"/>
+<text x="805" y="926" font-size="16" fill="#111" text-anchor="start">10.7.0.0/16</text>
+<text x="980" y="926" font-size="16" fill="#111" text-anchor="start">local</text>
+<g fill="none" stroke="#111" stroke-width="4"><circle cx="70" cy="380" r="14"/><path d="M42,425 a28,28 0 0 1 56,0 Z"/><circle cx="115" cy="372" r="11"/><path d="M95,410 a22,22 0 0 1 44,0"/></g>
+<text x="95" y="462" font-size="17" fill="#111" text-anchor="middle" font-weight="bold">Пользователи</text>
+<g fill="none" stroke="#111" stroke-width="4"><rect x="35" y="545" width="100" height="65"/><path d="M20,625 H150 L140,610 H30 Z"/></g>
+<text x="90" y="655" font-size="16" fill="#111" text-anchor="middle" font-weight="bold">Мой компьютер</text>
+<text x="90" y="675" font-size="15" fill="#111" text-anchor="middle">(ssh)</text>
+<rect x="1385" y="30" width="305" height="115" rx="6" fill="#fff" stroke="#555" stroke-width="2.5"/>
+<text x="1537.5" y="58" font-size="17" fill="#111" text-anchor="middle" font-weight="bold">GitHub (HTTPS)</text>
+<text x="1537.5" y="80" font-size="13.5" fill="#222" text-anchor="middle">загрузка кода</text>
+<rect x="1385" y="175" width="305" height="115" rx="6" fill="#fff" stroke="#7cb342" stroke-width="2.5"/>
+<text x="1537.5" y="203" font-size="17" fill="#111" text-anchor="middle" font-weight="bold">Amazon S3</text>
+<text x="1537.5" y="225" font-size="13.5" fill="#222" text-anchor="middle">timecapsule-dev-uploads-</text>
+<text x="1537.5" y="244" font-size="13.5" fill="#222" text-anchor="middle">iliuha2006</text>
+<text x="1537.5" y="263" font-size="13.5" fill="#222" text-anchor="middle">хранение вложений (uploads)</text>
+<rect x="1385" y="320" width="305" height="160" rx="6" fill="#fff" stroke="#8a3ffc" stroke-width="2.5"/>
+<text x="1537.5" y="348" font-size="17" fill="#111" text-anchor="middle" font-weight="bold">Route 53 (приватная зона)</text>
+<text x="1537.5" y="370" font-size="13.5" fill="#222" text-anchor="middle">timecapsule.internal</text>
+<text x="1537.5" y="389" font-size="13.5" fill="#222" text-anchor="middle">db — CNAME → endpoint RDS</text>
+<text x="1537.5" y="408" font-size="13.5" fill="#222" text-anchor="middle">(раньше: A → db-server)</text>
+<text x="1537.5" y="427" font-size="13.5" fill="#222" text-anchor="middle">db.timecapsule.internal (внутри VPC)</text>
+<rect x="1385" y="560" width="305" height="150" rx="6" fill="#fff" stroke="#e8590c" stroke-width="2.5"/>
+<text x="1537.5" y="588" font-size="17" fill="#111" text-anchor="middle" font-weight="bold">EventBridge Scheduler</text>
+<text x="1537.5" y="610" font-size="13.5" fill="#222" text-anchor="middle">timecapsule-dev-rds-nightly-stop</text>
+<text x="1537.5" y="629" font-size="13.5" fill="#222" text-anchor="middle">cron(0 23 * * ? *)</text>
+<text x="1537.5" y="648" font-size="13.5" fill="#222" text-anchor="middle">Europe/Chisinau</text>
+<text x="1537.5" y="667" font-size="13.5" fill="#222" text-anchor="middle">цель: RDS StopDBInstance</text>
+<rect x="1385" y="760" width="305" height="115" rx="6" fill="#fff" stroke="#e8590c" stroke-width="2.5"/>
+<text x="1537.5" y="788" font-size="17" fill="#111" text-anchor="middle" font-weight="bold">IAM: роль и политика</text>
+<text x="1537.5" y="810" font-size="13.5" fill="#222" text-anchor="middle">timecapsule-dev-scheduler-role</text>
+<text x="1537.5" y="829" font-size="13.5" fill="#222" text-anchor="middle">политика timecapsule-dev-rds-stop</text>
+<text x="1537.5" y="848" font-size="13.5" fill="#222" text-anchor="middle">(только rds:StopDBInstance)</text>
+<polyline points="180,395 358,395" fill="none" stroke="#111111" stroke-width="2.5" marker-end="url(#ah111111)"/>
+<text x="205" y="383" font-size="15" fill="#111" text-anchor="start">HTTP :80</text>
+<polyline points="150,474 995,474 995,452" fill="none" stroke="#111" stroke-width="2.5" marker-end="url(#ah111111)"/>
+<text x="205" y="466" font-size="14" fill="#111" text-anchor="start">SSH :22 (мой IP)</text>
+<polyline points="710,370 818,370" fill="none" stroke="#111111" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ah111111)" marker-start="url(#ah111111)"/>
+<text x="715" y="360" font-size="14" fill="#111" text-anchor="start">SSH :22</text>
+<polyline points="535,452 535,568" fill="none" stroke="#111111" stroke-width="2.5" marker-end="url(#ah111111)"/>
+<text x="547" y="490" font-size="14" fill="#111" text-anchor="start" font-weight="bold">SQL :5432 (TLS)</text>
+<polyline points="797,160 1345,160 1345,88 1383,88" fill="none" stroke="#8a3ffc" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#ah8a3ffc)"/>
+<polyline points="797,172 1362,172 1362,232 1383,232" fill="none" stroke="#8a3ffc" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#ah8a3ffc)"/>
+<polyline points="1240,400 1383,400" fill="none" stroke="#8a3ffc" stroke-width="2.5" stroke-dasharray="3 4" marker-end="url(#ah8a3ffc)" marker-start="url(#ah8a3ffc)"/>
+<polyline points="1383,700 712,700" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#ahe8590c)"/>
+<text x="1300" y="690" font-size="12" fill="#111" text-anchor="start"></text>
+<text x="1050" y="692" font-size="14" fill="#d9480f" text-anchor="start" font-weight="bold">rds:StopDBInstance (API)</text>
+<polyline points="1537,712 1537,758" fill="none" stroke="#e8590c" stroke-width="2.5" marker-end="url(#ahe8590c)"/>
+<text x="1548" y="740" font-size="13" fill="#d9480f" text-anchor="start">AssumeRole</text>
+<rect x="1385" y="905" width="305" height="135" rx="6" fill="#fff" stroke="#555" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="1400" y1="930" x2="1465" y2="930" stroke="#111" stroke-width="2.5"/>
+<text x="1475" y="935" font-size="13.5" fill="#111" text-anchor="start">Трафик из интернета</text>
+<line x1="1400" y1="953" x2="1465" y2="953" stroke="#111" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="1475" y="958" font-size="13.5" fill="#111" text-anchor="start">Трафик внутри VPC</text>
+<line x1="1400" y1="976" x2="1465" y2="976" stroke="#8a3ffc" stroke-width="2.5" stroke-dasharray="8 5"/>
+<text x="1475" y="981" font-size="13.5" fill="#111" text-anchor="start">Доступ в интернет (IGW)</text>
+<line x1="1400" y1="999" x2="1465" y2="999" stroke="#8a3ffc" stroke-width="2.5" stroke-dasharray="3 4"/>
+<text x="1475" y="1004" font-size="13.5" fill="#111" text-anchor="start">Внутренний DNS (Route 53)</text>
+<line x1="1400" y1="1022" x2="1465" y2="1022" stroke="#e8590c" stroke-width="2.5" stroke-dasharray="8 5"/>
+<text x="1475" y="1027" font-size="13.5" fill="#111" text-anchor="start">Управление RDS (Scheduler)</text>
+</svg>
